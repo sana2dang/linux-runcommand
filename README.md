@@ -4,6 +4,7 @@
 
 ## 사전 설치 패키지 (Pre-installation package)
 ```
+sudo apt-get install git
 sudo apt-get install dialog
 sudo apt-get install psmisc
 sudo apt-get install python-pyudev
