@@ -3,6 +3,9 @@
 
 
 ## 사전 설치 패키지 (Pre-installation package)
+
+It must be autologin service to work.( linux )
+
 ```
 sudo apt-get install git
 sudo apt-get install dialog
