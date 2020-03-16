@@ -41,7 +41,9 @@ CORE32_PATH="$HOME_PATH/.config/retroarch32/cores"
 LOG_FILE="$RUNCOMMAND_PATH/log.txt"
 ```
 
-# 에뮬레이터별 코어 설정 방법( arcade.cfg 예시 )( Core setting method for each emulator )
+# 에뮬레이터별 코어 설정 방법( cfg/arcade.cfg 예시 )( Core setting method for each emulator )
+
+cfg/ folder save
 
 코어 앞에 "32-"를 붙일 경우 32bit 로 동작합니다.( 실제 코어파일명 변경 x ) (If "32-" is added in front of the core, it operates in retroarch 32 bit.)
 
