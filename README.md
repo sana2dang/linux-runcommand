@@ -11,6 +11,8 @@ sudo apt-get install python-pyudev
 ```
 
 ## 설치 방법( How to install )
+pi나 odroid 로 로그인하여 진행합니다.( root로 로그인시 ~가 가르키는 경로가 다릅니다. )
+( Log in as pi or odroid to proceed. (When logging in as root, the path pointed to by ~ is different.) )
 ```
 git clone https://github.com/sana2dang/linux-runcommand ~/runcommand
 cd ~/runcommand
