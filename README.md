@@ -91,6 +91,10 @@ CORES[0]="/home/odroid/drastic/drastic.sh"
 </system>
 ```
 
+## OGA RetroRoller 용 es_systems.cfg ( es_systems.cfg for OGA RetroRoller )
+/etc/emulationstation 에 복사해서 사용합니다.
+( Copy to /etc/emulationstation to use. )
+
 
 
 ## 런커맨드 활성화 방법( How to activate runcommand )
