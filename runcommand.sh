@@ -70,7 +70,7 @@ function func_DefaultCoreSelect()
 
 	dialog --clear --no-cancel   \
 	--title "[ DEFAULT C O R E - S E L E C T ]" \
-	--menu "UP/DOWN ENTER! \n\
+	--menu "UP/DOWN A-BUTTON! \n\
 	EMULATOR : $EMULATOR \n\
 	ROM : $ROM_TINY \n\
 	DEFAULT CORE : $DEFAULT" 15 60 10 \
@@ -103,7 +103,7 @@ function func_GameCoreSelect()
 
 	dialog --clear --no-cancel   \
 	--title "[ G A M E - C O R E - S E L E C T ]" \
-	--menu "UP/DOWN ENTER! \n\
+	--menu "UP/DOWN A-BUTTON! \n\
 	EMULATOR : $EMULATOR \n\
 	ROM : $ROM_TINY \n\
 	GAME CORE : $DEFAULT" 15 60 10 \
@@ -209,7 +209,7 @@ function func_CoreSelectMenu()
 	######################################## dialog menu ###########################################################
 	dialog --clear --no-cancel --timeout 10  \
 	--title "[ C O R E - S E L E C T ]" \
-	--menu "UP/DOWN ENTER! \n\
+	--menu "UP/DOWN A-BUTTON! \n\
 	EMULATOR : $EMULATOR \n\
 	ROM : $ROM_TINY \n\
 	NO CONTROL : GAME CORE starts after 10 seconds" 15 60 10 \
