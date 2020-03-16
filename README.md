@@ -115,3 +115,4 @@ CORES[0]="/home/odroid/drastic/drastic.sh"
 ### 참고 링크( Reference link )
 https://github.com/RetroPie/RetroPie-Setup/tree/master/scriptmodules/supplementary/runcommand
 http://linuxcommand.org/lc3_adv_dialog.php
+https://forum.odroid.com/viewtopic.php?f=193&t=38140
