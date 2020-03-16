@@ -83,7 +83,7 @@ function func_DefaultCoreSelect()
 
 	# cfg 파일에 저장
 	if [ "$SEL_DEFAULT" != "" ]; then
-		sed -i "1s/.*/DEFAULT=\"$SEL_DEFAULT\"/g" $RUNCOMMAND_PATH/$EMULATOR.cfg
+		sed -i "1s/.*/DEFAULT=\"$SEL_DEFAULT\"/g" $RUNCOMMAND_PATH/cfg/$EMULATOR.cfg
 	fi 
 }
 
