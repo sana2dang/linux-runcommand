@@ -2,6 +2,10 @@
 ##### 라즈베리파이, 오드로이드고 지원( Support Raspberry Pi, Odroid )
 
 
+### OGA STOCK base image
+necessary linux autologin service
+
+
 ## 사전 설치 패키지 (Pre-installation package)
 
 It must be autologin service to work.( linux )
