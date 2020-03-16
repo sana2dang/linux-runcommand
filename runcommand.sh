@@ -168,7 +168,7 @@ function func_LaunchGame()
 	if [[ "$CORE" == *".so"* ]]; then
 		if [[ "$CORE" == *"32-"* ]]; then
 			CORE=${CORE:3}
-			echo "RUNCOMMAND : $RETROARCH32_EXEC -L $CORE32_PATH/$CORE $ROM" >> $LOG_FILE
+			echo "RUNCOMMAND : $RETROARCH32_EXEC -L \"$CORE32_PATH/$CORE\" \"$ROM\"" >> $LOG_FILE
 
 			if [ "$EMULATOR" == "dreamcast" ] || [ "$EMULATOR" == "atomiswave" ] || [ "$EMULATOR" == "naomi" ]; then
 				$RETROARCH32_EXEC -L "$CORE32_PATH/$CORE" < /dev/null "$ROM" > /dev/null 2>&1
@@ -176,7 +176,7 @@ function func_LaunchGame()
 				$RETROARCH32_EXEC -L "$CORE32_PATH/$CORE" "$ROM" > /dev/null 2>&1
 			fi
 		else
-			echo "RUNCOMMAND : $RETROARCH_EXEC -L $CORE_PATH/$CORE $ROM" >> $LOG_FILE
+			echo "RUNCOMMAND : $RETROARCH_EXEC -L \"$CORE_PATH/$CORE\" \"$ROM\"" >> $LOG_FILE
 			if [ "$EMULATOR" == "dreamcast" ] || [ "$EMULATOR" == "atomiswave" ] || [ "$EMULATOR" == "naomi" ]; then
 				$RETROARCH_EXEC -L "$CORE_PATH/$CORE" < /dev/null "$ROM" > /dev/null 2>&1
 			else
