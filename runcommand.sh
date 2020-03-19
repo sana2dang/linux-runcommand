@@ -118,6 +118,7 @@ function func_GameCoreSelect()
 	if [ "$GAME_DEFAULT" != "" ]; then
 		# 게임별 선택 코어 cfg 만들기
 		echo "$GAME_DEFAULT" > "$RUNCOMMAND_PATH/$EMULATOR/$ROM_TINY.cfg"
+		sed -i "s/[\]//g" "$RUNCOMMAND_PATH/$EMULATOR/$ROM_TINY.cfg"
 		echo "CREATE FILE : $RUNCOMMAND_PATH/$EMULATOR/$ROM_TINY.cfg" >> $LOG_FILE
 		echo "SELECT GAME CORE : $GAME_DEFAULT" >> $LOG_FILE
 	fi
