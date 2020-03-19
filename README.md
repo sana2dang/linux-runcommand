@@ -25,6 +25,7 @@ git clone https://github.com/sana2dang/linux-runcommand ~/runcommand
 cd ~/runcommand
 sudo chmod 755 ./runcommand.sh
 sudo chmod 755 ./joy2key.py
+sudo chmod 755 ./cfg/*
 ```
 
 ## 설정 방법( How to set )
