@@ -168,7 +168,7 @@ function func_LaunchGame()
 	func_KillJoy2Key
 	########################################
 
-	
+	perfmax
 	## 32bit / 64bit 구분 ( 앞에 "32-" 가 붙으면 32비트 구동
 	if [[ "$CORE" == *".so"* ]]; then
 		if [[ "$CORE" == *"32-"* ]]; then
@@ -192,9 +192,7 @@ function func_LaunchGame()
 		echo "RUNCOMMAND(no core) : $CORE \"$ROM\"" >> $LOG_FILE
 		$CORE "$ROM" > /dev/null 2>&1
 	fi
-	
-	
-	exit 0
+	perfnorm
 }
 
 
@@ -251,7 +249,7 @@ echo "EMULATOR : $EMULATOR" > $LOG_FILE
 echo "ROM_FULL_PATH : $ROM" >> $LOG_FILE 
 echo "ROM : $ROM_TINY" >> $LOG_FILE
 	
-perfmax
+
 if read -s -t $TIME -N 1 key; then
 	while [ 1 ]; do
 		func_CoreSelectMenu
@@ -259,6 +257,6 @@ if read -s -t $TIME -N 1 key; then
 else
 	func_LaunchImmediately
 fi
-perfnorm
-#clear
+
+clear
 #######################################################################################
