@@ -130,7 +130,7 @@ function func_GameCoreRemove()
 	echo "" >> $LOG_FILE
 	echo "=== func_GameCoreRemove" >> $LOG_FILE
 	
-	rm "$RUNCOMMAND_PATH/$EMULATOR/$ROM_TINY.cfg"
+	rm -f "$RUNCOMMAND_PATH/$EMULATOR/$ROM_TINY.cfg"
 	GAME_DEFAULT=""
 }
 
