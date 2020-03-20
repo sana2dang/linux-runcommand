@@ -193,6 +193,8 @@ function func_LaunchGame()
 		$CORE "$ROM" > /dev/null 2>&1
 	fi
 	perfnorm
+	
+	exit 0
 }
 
 
