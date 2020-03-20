@@ -78,9 +78,11 @@ function func_DefaultCoreSelect()
 
 	############################################ select menu #######################################################
 	defaultitem=`cat $RUNCOMMAND_PATH/defaultitem` 
-
-	SEL_DEFAULT=${CORES[$defaultitem]}
-
+	
+	if [ "$defaultitem" != "EXIT" ]; then
+		SEL_DEFAULT=${CORES[$defaultitem]}
+	fi
+	
 	# cfg 파일에 저장
 	if [ "$SEL_DEFAULT" != "" ]; then
 		sed -i "1s/.*/DEFAULT=\"$SEL_DEFAULT\"/g" $RUNCOMMAND_PATH/cfg/$EMULATOR.cfg
@@ -113,8 +115,10 @@ function func_GameCoreSelect()
 	gameitem=`cat $RUNCOMMAND_PATH/gameitem` 
 
 	# make decsion 
-	GAME_DEFAULT=${CORES[$gameitem]}
-
+	if [ "$gameitem" != "EXIT" ]; then
+		GAME_DEFAULT=${CORES[$gameitem]}
+	fi
+	
 	if [ "$GAME_DEFAULT" != "" ]; then
 		# 게임별 선택 코어 cfg 만들기
 		echo "$GAME_DEFAULT" > "$RUNCOMMAND_PATH/$EMULATOR/$ROM_TINY.cfg"
