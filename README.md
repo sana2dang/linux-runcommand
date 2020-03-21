@@ -76,13 +76,13 @@ CORES[4]="mame_libretro.so"
 psp.cfg
 ```
 DEFAULT="/opt/ppsspp-crashoverride/PPSSPPSDL"
-CORES[0]="/opt/ppsspp-crashoverride/PPSSPPSDL"
+CORES[0]="₩/opt₩/ppsspp-crashoverride₩/PPSSPPSDL"
 ```
 
 nds.cfg
 ```
 DEFAULT="/home/odroid/drastic/drastic.sh"
-CORES[0]="/home/odroid/drastic/drastic.sh"
+CORES[0]="₩/home₩/odroid₩/drastic₩/drastic.sh"
 ```
 
 
