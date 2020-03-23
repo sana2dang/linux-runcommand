@@ -82,7 +82,7 @@ function func_DefaultCoreSelect()
 	if [ "$defaultitem" != "EXIT" ]; then
 		SEL_DEFAULT=${CORES[$defaultitem]}
 	fi
-	
+
 	# cfg 파일에 저장
 	if [ "$SEL_DEFAULT" != "" ]; then
 		sed -i "1s/.*/DEFAULT=\"$SEL_DEFAULT\"/g" $RUNCOMMAND_PATH/cfg/$EMULATOR.cfg
@@ -118,7 +118,7 @@ function func_GameCoreSelect()
 	if [ "$gameitem" != "EXIT" ]; then
 		GAME_DEFAULT=${CORES[$gameitem]}
 	fi
-	
+
 	if [ "$GAME_DEFAULT" != "" ]; then
 		# 게임별 선택 코어 cfg 만들기
 		echo "$GAME_DEFAULT" > "$RUNCOMMAND_PATH/$EMULATOR/$ROM_TINY.cfg"
@@ -193,7 +193,7 @@ function func_LaunchGame()
 		$CORE "$ROM" > /dev/null 2>&1
 	fi
 	perfnorm
-	
+
 	exit 0
 }
 
@@ -243,7 +243,7 @@ function func_CoreSelectMenu()
 
 ##### Main Function ##################################################################
 
-#clear
+clear
 # joy2key enable - up down A-button
 "$RUNCOMMAND_PATH/joy2key.py" "/dev/input/js0" kcub1 kcuf1 kcuu1 kcud1 0x0a 0x09 & 
 
